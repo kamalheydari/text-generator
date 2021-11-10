@@ -1,0 +1,80 @@
+:root {
+  --bg-color: #5748da48;
+  --text-color-1: #1a6aa2;
+  --text-color-2: #325270;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.section {
+  width: 90vw;
+  height: auto;
+  margin: 1.2rem auto;
+  max-width: 1060px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.section__title {
+  color: var(--text-color-1);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section__form {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.form__label {
+  color: var(--text-color-1);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.form__input {
+  padding: 0.5rem;
+  width: 4rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.form__btn {
+  display: block;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  color: var(--text-color-2);
+  border: 2px solid var(--text-color-1);
+  transition: 0.3s;
+}
+
+.form__btn:hover {
+  color: var(--text-color-1);
+}
+
+.section__text {
+  color: var(--text-color-2);
+}
+
+.result {
+  max-width: 80%;
+  margin: 1.5rem auto;
+}
